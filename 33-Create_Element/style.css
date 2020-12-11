@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    color:darkred;
+}
+h2{
+    color:darkblue;
+}
+.box{
+    width: 150px;
+    height: 100px;
+    border: 1px solid black;
+    color:white;
+}
+.box-blue{
+    background-color: darkblue;
+}

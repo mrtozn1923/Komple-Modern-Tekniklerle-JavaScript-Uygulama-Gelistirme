@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    color: darkred;
+}
+
+h2 {
+    color: darkblue;
+}
+
+ul.list {
+    list-style-type: none;
+    width: 50vw;
+    padding: 0;
+}
+
+ul>li.list-item {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 2px;
+}
+ul.list2 {
+    list-style-type: none;
+    width: 50vw;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+div.box {
+    width: 100px;
+    height: 100px;
+    border: 2px black dotted;
+    margin: 10px;
+    float: left;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.box-blue {
+    background-color: darkblue;
+}
+
+div.box-green {
+    background-color: darkgreen;
+}
+
+div.box-red {
+    background-color: darkred;
+}

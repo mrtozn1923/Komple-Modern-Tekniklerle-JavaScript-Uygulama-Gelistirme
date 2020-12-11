@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personel Yönetim Sistemi</title>
+    <link rel="stylesheet" href="icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="header-app">
+        <div class="logo">
+            <span class="icon-container">
+                <span class="icon icon-logo">
+                </span>
+            </span>
+            PERSONEL YÖNETİM SİSTEMİ</div>
+    </header>
+
+    <main id="content">
+
+        <div id="container-add-staff">
+            <div id="header">
+                Yeni Personel Ekle
+            </div>
+            <div id="add-staff-content">
+                <table>
+                    <tr>
+                        <td><label for="txt-id-number">Kimlik Numarası:</label></td>
+                        <td><input type="text" maxlength="11" id="txt-id-number"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="txt-staff-name">Ad:</label></td>
+                        <td><input type="text" id="txt-staff-name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="txt-staff-surname">Soyad:</label></td>
+                        <td><input type="text" id="txt-staff-surname"></td>
+                    </tr>
+                </table>
+                <button id="btn-add-staff">Kaydet</button>
+            </div>
+        </div>
+        
+        <!-- <div class="info info-success">
+            <div class="info-icon"><span class="icon icon-info"></span></div>
+            <div class="info-text">Personel kayıt işlemi başarılı.</div>
+        </div> -->
+
+        <div id="container-list-staff">
+            <div id="header">
+                Personel Listesi
+            </div>
+            <div id="staff-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Kimlik Numarası</td>
+                            <td>Ad</td>
+                            <td>Soyad</td>
+                            <td>İşlem</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr class="staff">
+                            <td>12345678901</td>
+                            <td>Mert</td>
+                            <td>Özen</td>
+                            <td>
+                                <div><span class="icon icon-remove"></span></div>
+                            </td>
+                        </tr> -->
+                        
+                    </tbody>
+
+                </table>
+            </div>
+            <button id="btn-remove-all-staff">Tümünü Sil</button>
+            <div class="info info-danger">
+                <div class="info-icon"><span class="icon icon-info"></span></div>
+                <div class="info-text">Kayıtlı personel yok.</div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="staff.js"></script>
+    <script src="ui.js"></script>
+    <script src="storage.js"></script>
+    <script src="tools.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

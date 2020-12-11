@@ -1,0 +1,17 @@
+[
+    {
+        "identityNumber":"12345678901",
+        "name":"Mert",
+        "surname":"Özen"
+    },
+    {
+        "identityNumber":"12345678902",
+        "name":"Mehmet",
+        "surname":"Özen"
+    },
+    {
+        "identityNumber":"12345678903",
+        "name":"Mesut",
+        "surname":"Özen"
+    }
+]

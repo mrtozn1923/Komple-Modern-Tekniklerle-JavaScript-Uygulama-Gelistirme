@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling and Capturing</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        h1 {
+            color: darkred;
+        }
+        
+        h2 {
+            color: darkblue;
+        }
+        #wrapper {
+            border: 2px solid blue;
+            padding: 10px;
+        }
+        ul{
+            list-style-type: none;
+            background-color: rgba(255,0,0,0.3);
+        }
+        ul li{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 40px;
+            border: 1px solid blue;
+            padding: 10px;
+        }
+        ul li:nth-child(odd){
+            background-color: gray;
+            color:white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript Kursu-DOM İşlemleri</h1>
+    <h2>Konu: Event Bubbling and Capturing
+    </h2>
+    <h2>Hazırlayan: Mert Özen</h2>
+    <hr>
+
+    <div id="wrapper">
+        <ul id="list">
+            <li>Name1</li>
+            <li>Name2</li>
+            <li>Name3</li>
+            <li>Name4</li>
+            <li>Name5</li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+:root {
+    --primary-color: #1f3c88;
+    --secondary-color: #aa3a3a;
+    --text-color: #f6f5f5;
+    --success-color: #2ea124;
+    --danger-color: #b83a21;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: none;
+}
+
+#header-app {
+    box-shadow: 0px 3px 5px gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#header-app .logo {
+    min-width: 320px;
+    /*iphone 5*/
+    height: 80px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+#header-app .logo .icon-container {
+    display: inline-block;
+    width: 30px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#content {
+    margin-top: 90px;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 1000px) {
+    #content {
+        width: 1000px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+#container-add-staff {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#container-add-staff table {
+    width: 100%;
+}
+
+#container-add-staff table tr td:nth-child(odd) {
+    width: 25%;
+}
+
+#container-add-staff input[type="text"] {
+    width: 100%;
+    height: 25px;
+    font-size: 1rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 5px
+}
+
+#header {
+    height: 40px;
+    line-height: 40px;
+    background-color: var(--secondary-color);
+    padding-left: 10px;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#container-add-staff #add-staff-content {
+    margin: 10px;
+    font-size: 1rem;
+}
+
+#btn-add-staff {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--success-color);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+}
+
+#btn-add-staff:hover {
+    opacity: 0.8;
+}
+
+
+/*---------------------------Info-------------------------*/
+
+.info-danger {
+    background-color: var(--danger-color);
+    opacity: 0.6;
+}
+
+.info-success {
+    background-color: var(--success-color);
+    opacity: 0.6;
+}
+
+.info {
+    height: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.info-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0.4rem;
+}
+
+.info-text {
+    color: var(--text-color);
+    max-width: 85%;
+    font-size: 1rem;
+}
+
+
+/*---------------------------Info-------------------------*/
+
+#staff-list {
+    overflow: auto;
+}
+
+#staff-list table {
+    width: 100%;
+}
+
+#staff-list table thead td {
+    background-color: var(--primary-color);
+    padding: 10px;
+    color: var(--text-color);
+    text-align: center;
+    font-weight: bold;
+    filter: grayscale();
+}
+
+#staff-list table tbody td {
+    text-align: center;
+    padding: 5px;
+}
+
+#staff-list table tbody td div {
+    width: 30px; 
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+#staff-list table tbody tr {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+#staff-list table tbody tr:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+#btn-remove-all-staff {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--danger-color);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+}
+
+#btn-remove-staff:hover {
+    opacity: 0.8;
+}

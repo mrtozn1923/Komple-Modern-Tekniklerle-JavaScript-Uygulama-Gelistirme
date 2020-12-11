@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Görev İzleyici</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icons.css">
+</head>
+
+<body>
+    <header id="header-app">
+        <div id="container-logo">
+            <span id="logo">
+            GÖREV İZLEYİCİ
+            </span>
+        </div>
+    </header>
+    <main>
+        <section id="container-new-task">
+            <div class="header">
+                Yeni Görev Ekle
+            </div>
+            <div id="new-task">
+                <input id="txt-add-task" type="text">
+                <button id="btn-add-task">Ekle</button>
+            </div>
+        </section>
+
+        <section id="container-search-task">
+            <div class="header">
+                Görev Ara
+            </div>
+            <input id="txt-search-task" type="text">
+        </section>
+        <section id="container-task-list">
+            <div class="header">
+                Kayıtlı Görevler
+            </div>
+            <div class="task-list">  
+                <!--task-->
+                <button id="btn-all-tasks-complete">
+                    Tümünü Tamamla
+                </button>
+            </div>
+        </section>
+        <section id="container-completed-task-list">
+            <div class="header">
+                Tamamlanmış Görevler
+            </div>
+            <div class="task-list">
+                <button id="btn-all-tasks-remove">
+                    Tümünü Sil
+                </button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
