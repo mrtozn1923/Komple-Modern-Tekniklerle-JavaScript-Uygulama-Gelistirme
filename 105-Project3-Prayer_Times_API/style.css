@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 50px;
+    background-color: teal;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 50px;
+    padding-left: 20px;
+}
+main{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    
+}
+main #container-filter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main #container-filter select{
+    width: 35%;
+    height: 30px;
+    outline: none;
+    font-size: 1rem;
+    background-color: teal;
+    border: none;
+    color:white;
+}
+main #container-filter button{
+    width: 35%;
+    height: 30px;
+    outline: none;
+    font-size: 1rem;
+    border: none;
+    background-color: teal;
+    color:white;
+    cursor: pointer;
+}
+/*-----------------------------------*/
+main #container-prayer-times{
+    margin-top: 20px;
+}
+main #container-prayer-times table{
+    width: 100%;
+    text-align: center;
+}
+main #container-prayer-times table thead td{
+    padding: 5px;
+    background-color: steelblue;
+    color:white;
+}
+main #container-prayer-times table tbody td{
+    padding: 5px;
+}
+main #container-prayer-times table tbody td:nth-child(odd){
+    background-color: teal;
+    color:white;
+    opacity: 0.8;
+}
+main #container-prayer-times table tbody td:nth-child(even){
+    background-color: teal;
+    color:white;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaz Vakitleri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        NAMAZ VAKİTLERİ UYGULAMASI
+    </header>
+    <main>
+        <section id="container-filter">
+            <select id="select-cities">
+                <option value="istanbul">İstanbul</option>
+                <option value="ankara">Ankara</option>
+                <option value="izmir">İzmir</option>
+            </select>
+            <span id="info"></span>
+            <button id="btn-get-times">Vakitleri Getir</button>
+        </section>
+        <section id="container-prayer-times">
+            <table>
+                <thead>
+                    <tr>
+                        <td>İmsak</td>
+                        <td>Güneş</td>
+                        <td>Öğle</td>
+                        <td>İkindi</td>
+                        <td>Akşam</td>
+                        <td>Yatsı</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="imsak"></td>
+                        <td id="gunes"></td>
+                        <td id="ogle"></td>
+                        <td id="ikindi"></td>
+                        <td id="aksam"></td>
+                        <td id="yatsi"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+
+    <script src="ui.js"></script>
+    <script src="prayertimesapi.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
