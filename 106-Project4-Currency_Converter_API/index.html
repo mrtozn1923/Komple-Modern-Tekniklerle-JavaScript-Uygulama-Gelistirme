@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Döviz Çevirici</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        DÖVİZ ÇEVİRİ UYGULAMASI
+    </header>
+    <main>
+        <section id="container-converter">
+            <input type="text" id="txt-base-currency">
+            <select id="select-base-currency">
+                <option value="USD">USD</option>
+                <option value="TRY">TRY</option>
+                <option value="EUR">EUR</option>
+            </select>
+            <select id="select-target-currency">
+                <option value="TRY">TRY</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+            </select>
+            <button id="btn-convert">ÇEVİR</button>
+        </section>
+        <section id="container-converter-result">
+            <label id="lbl-base-amount"></label>
+            <label id="lbl-base-currency"></label>
+            <label id="info"></label>
+            <label id="lbl-target-amount"></label>
+            <label id="lbl-target-currency"></label>
+        </section>
+    </main>
+    
+
+    <script src="ui.js"></script>
+    <script src="currencyconverterapi.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+

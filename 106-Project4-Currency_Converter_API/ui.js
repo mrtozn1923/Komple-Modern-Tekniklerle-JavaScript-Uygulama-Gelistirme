@@ -1,0 +1,20 @@
+class UI{
+    constructor(){
+        this.txtBaseCurrency=document.getElementById("txt-base-currency");
+        this.selectBaseCurrency=document.getElementById("select-base-currency");
+        this.selectTargetCurrency=document.getElementById("select-target-currency");
+        this.btnConvert=document.getElementById("btn-convert");
+        this.lblBaseAmount=document.getElementById("lbl-base-amount");
+        this.lblBaseCurrency=document.getElementById("lbl-base-currency");
+        this.lblTargetAmount=document.getElementById("lbl-target-amount");
+        this.lblTargetCurrency=document.getElementById("lbl-target-currency");
+        this.info=document.getElementById("info");
+    }
+    showResult(result){
+        this.lblBaseAmount.innerText=this.txtBaseCurrency.value;
+        this.lblBaseCurrency.innerText=this.selectBaseCurrency.value;
+        this.lblTargetAmount.innerText=result;
+        this.lblTargetCurrency.innerText=this.selectTargetCurrency.value;
+        this.info.innerText="=";
+    }
+}
