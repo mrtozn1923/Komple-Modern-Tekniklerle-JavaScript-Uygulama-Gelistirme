@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Kullanıcı Sorgulama</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icons.css">
+</head>
+
+<body>
+    <header id="app-header">
+        GITHUB KULLANICI SORGULAMA
+    </header>
+    <main>
+        <section id="container-user-search">
+            <header class="section-header">
+                Kullanıcı Arama
+            </header>
+            <section id="content-user-search">
+                <label for="inpt-user-name">Kullanıcı Adı:</label>
+                <input type="text" id="inpt-user-name">
+                <button id="btn-user-search">Kullanıcı Ara</button>
+            </section>
+        </section>
+        <!-- <div class="info info-danger">
+            <div class="info-icon"><span class="icon icon-info"></span></div>
+            <div class="info-text">Kullanıcı bulunamadı.</div>
+        </div> -->
+        <!-- -------------------------------------------- -->
+        <section id="container-last-user-search">
+            <header class="section-header">
+                Son Aramalar
+            </header>
+            <section id="content-last-user-search">
+                <!-- <span class="last-user">mrtozn1923</span> -->
+            </section>
+            <section id="content-remove-all-last-user-search">
+                <button id="btn-remove-all-last-user-search">
+                    Son Aramaları Temizle
+                </button>
+            </section>
+        </section>
+        <!-- -------------------------------------------- -->
+        <section id="container-user-info">
+            <header class="section-header">
+                Kullanıcı Bilgileri
+            </header>
+            <section id="content-user-info">
+                <div id="user-avatar">
+                    <img id="avatar" src="img/default-person.jpg" alt="user avatar">
+                </div>
+                <div id="user-info">
+                    <table>
+                        <tr>
+                            <td>Ad Soyad:</td>
+                        </tr>
+                        <tr>
+                            <td id="name">-</td>
+                        </tr>
+                        <tr>
+                            <td>Konum:</td>
+                        </tr>
+                        <tr>
+                            <td id="location">-</td>
+                        </tr>
+                        <tr>
+                            <td>Takipçi Sayısı:</td>
+                        </tr>
+                        <tr>
+                            <td id="followers">-</td>
+                        </tr>
+                        <tr>
+                            <td>Biyografi:</td>
+                        </tr>
+                        <tr>
+                            <td id="bio">-</td>
+                        </tr>
+                        <tr>
+                            <td>Github Sayfası:</td>
+                        </tr>
+                        <tr>
+                            <td><a id="github-url" href="" target="_blank">-</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </section>
+        <!-- -------------------------------------------- -->
+        <!-- -------------------------------------------- -->
+        <section id="container-user-repos">
+            <header class="section-header">
+                Kullanıcı Repoları
+            </header>
+            <section id="content-user-repos">
+                -
+                <!-- <div class="repo">
+                    <a href='https://github.com/mrtozn1923/HTML-CSS-JS' target='_blank'class="repo-name">HTML-CSS-JS</a>
+                    <div class="repo-star">
+                        <div class="container-repo-star">
+                            <span class="icon icon-star"></span>
+                        </div>
+                        <span class="repo-star-count">300</span>
+                    </div>
+                </div> -->
+            </section>
+        </section>
+    </main>
+
+    <script src="ui.js"></script>
+    <script src="storage.js"></script>
+    <script src="githubapi.js"></script>
+    <script src="user.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

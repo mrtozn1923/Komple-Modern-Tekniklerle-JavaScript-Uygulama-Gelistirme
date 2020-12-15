@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    min-width: 600px;
+}
+header#app-header{
+    padding: 10px;
+    height: 70px;
+    line-height: 50px;
+    background-color: crimson;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+}
+main{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+main>section{
+    margin: 10px;
+    border: 2px solid teal;
+}
+header.section-header{
+    height: 40px;
+    background-color: teal;
+    color: white;
+    font-size: 1.2rem;
+    line-height: 40px;
+    padding-left: 20px;
+}
+section#content-user-search{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    justify-content: space-around;
+}
+section#content-user-search #inpt-user-name{
+    width: 200px;
+    height: 30px;
+    outline: none;
+    font-size: 1.1rem;
+    padding: 3px;
+}
+section#content-user-search #btn-user-search{
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: crimson;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+section#content-user-search #btn-user-search:hover{
+    opacity: 0.8;
+}
+section#content-last-user-search{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+section#content-last-user-search span.last-user{
+    background-color: brown;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 130px;
+    text-align: center;
+}
+section#content-last-user-search span.last-user:hover{
+    opacity: 0.8;
+}
+#content-remove-all-last-user-search{
+    text-align: center;
+}
+#btn-remove-all-last-user-search{
+    width: 50%;
+    margin: 10px;
+    background-color: green;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+#btn-remove-all-last-user-search:hover{
+    opacity: 0.8;
+}
+section#content-user-info{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+section#content-user-info div#user-avatar{
+    height: 200px;
+    width: 200px;
+}
+section#content-user-info div#user-avatar img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+section#content-user-info div#user-info{
+    width: 300px;
+    margin-left: 30px;
+}
+section#content-user-info div#user-info table{
+    width: 100%;
+    table-layout: fixed;
+}
+section#content-user-info div#user-info table tr{
+    height: 30px;
+}
+section#content-user-info div#user-info table tr:nth-child(odd) td{
+    background-color: green;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+section#content-user-info div#user-info table tr:nth-child(even) td{
+    padding-left: 15px;
+}
+section#content-user-repos{
+    padding: 20px;
+}
+div.repo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+a.repo-name{
+    background-color: green;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    margin-right: 5px;
+    text-decoration: none;
+}
+div.repo-star{
+    background-color: black;
+    width:max-content;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+div.container-repo-star{
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+}
+span.repo-star-count{
+    color:white;
+}
+
+/*---------------------------Info-------------------------*/
+
+.info-danger {
+    background-color: crimson;
+    opacity: 0.6;
+}
+.info {
+    height: 2rem;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.info-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0.4rem;
+}
+
+.info-text {
+    color: white;
+    max-width: 85%;
+    font-size: 1rem;
+}
+
+
+/*---------------------------Info-------------------------*/
