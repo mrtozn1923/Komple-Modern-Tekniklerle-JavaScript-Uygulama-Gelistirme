@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    max-width: 768px;
+    min-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header#app-header {
+    display: flex;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+    box-shadow: 0px 3px 0px gray;
+}
+
+@media only screen and (min-width: 768px) {
+    header#app-header {
+        height: 80px;
+        font-size: 1.3rem;
+    }
+}
+
+main#app-main {
+    max-width: 768px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+main #card-container {
+    width: 320px;
+}
+
+@media only screen and (min-width: 768px) {
+    main #card-container {
+        width: 540px;
+    }
+}
+
+main #card-container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/*FLIP CARD*/
+
+.flip-card {
+    float: left;
+    background-color: transparent;
+    width: 140px;
+    height: 140px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    .flip-card {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+} */
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+    box-shadow: 0px 0px 5px gray;
+}
+
+.flip-card-front span {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color:royalblue;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+.flip-card-back img {
+    width: 100%;
+    height: 100%;
+}
