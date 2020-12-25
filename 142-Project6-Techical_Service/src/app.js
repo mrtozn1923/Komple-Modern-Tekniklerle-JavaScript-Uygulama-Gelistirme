@@ -68,7 +68,11 @@ function createFaultRecord() {
                     if (device !== null) {
                         alert("Kayıt işlemi başarılı");
                     }
-                }).catch(alert("Bir hata oluştu."));
+                }).catch(error=>{
+                    if(error!=null){
+                        alert("Bir hata oluştu.");
+                    }
+                });
 
                 ui.inputsClear(ui.inptCustomerName, ui.inptCustomerPhoneNumber, ui.inptDeviceBrand, ui.inptDeviceModel, ui.inptDeviceProblem);
             } else if (result === false) {
@@ -80,9 +84,17 @@ function createFaultRecord() {
                                 alert("Kayıt işlemi başarılı");
                                 ui.inputsClear(ui.inptCustomerName, ui.inptCustomerPhoneNumber, ui.inptDeviceBrand, ui.inptDeviceModel, ui.inptDeviceProblem);
                             }
-                        }).catch(error => console.log(error));
+                        }).catch(error=>{
+                            if(error!=null){
+                                alert("Bir hata oluştu.");
+                            }
+                        });
                     }
-                }).catch(console.log("Bir hata oluştu."));
+                }).catch(error=>{
+                    if(error!=null){
+                        alert("Bir hata oluştu.");
+                    }
+                });
             } else {
                 alert("Bir hata oluştu.");
             }
@@ -91,23 +103,29 @@ function createFaultRecord() {
         alert("Lütfen tüm alanları doldurun.");
     }
 }
-
 function getCustomerList() {
     requestCustomers.get()
         .then(customers => {
             ui.addCustomerToUI(customers);
             getDeviceList(customers[0].phone);
         })
-        .catch(alert("Müşteri listesi alınırken hata oluştu."));
+        .catch(error=>{
+            if(error!=null){
+                alert("Müşteri listesi alınırken hata oluştu.");
+            }
+        });
 }
-
 function getDeviceList(customerPhoneNumber) {
     requestDevices.get("?customerPhone=" + customerPhoneNumber)
         .then(devices => {
             ui.addDeviceToUI(devices);
             deviceList = devices;
         })
-        .catch(alert("Cihaz listesi alınırken hata oluştu."));
+        .catch(error=>{
+            if(error!=null){
+                alert("Cihaz listesi alınırken hata oluştu.");
+            }
+        });
 }
 
 function updateDeviceStatus(deviceId, status) {
@@ -129,7 +147,10 @@ function updateDeviceStatus(deviceId, status) {
                 getDeviceList(device.customerPhone);
             }
         })
-        .catch(alert("Durum güncellemesi başarılı olamadı."));
+        .catch(error=>{
+            if(error!=null)
+            alert("Durum güncellemesi başarılı olamadı.");
+        });
 }
 
 function removeDeviceFaultRecord(deviceId, device) {
@@ -140,7 +161,10 @@ function removeDeviceFaultRecord(deviceId, device) {
                 ui.removeDeviceToUI(device);
             }
         })
-        .catch(alert("Cihaz silme işlemi başarılı olamadı."));
+        .catch(error=>{
+            if(error!=null)
+            alert("Cihaz silme işlemi başarılı olamadı.");
+        });
 }
 
 function controlCustomer(phoneNumber, callback) {
@@ -159,6 +183,7 @@ function controlCustomer(phoneNumber, callback) {
             callback(result);
         })
         .catch(error => {
-            callback("Hata oluştu");
+            if(error!=null)
+            {callback("Hata oluştu");}            
         });
 }

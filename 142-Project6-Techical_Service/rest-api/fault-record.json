@@ -19,6 +19,11 @@
       "name": "Ahmet",
       "phone": "01234567893",
       "id": 4
+    },
+    {
+      "name": "Tahir",
+      "phone": "01234567894",
+      "id": 5
     }
   ],
   "devices": [
@@ -55,17 +60,17 @@
       "model": "L258",
       "problem": "Fanı çalışmıyor.",
       "explain": "Fan değiştirildi.",
-      "status": "Hazır",
+      "status": "Hazır değil",
       "id": 5
     },
     {
-      "customerPhone": "01234567893",
-      "brand": "Acer",
-      "model": "A5896",
-      "problem": "Sürekli yeniden başlatıyor.",
+      "customerPhone": "01234567894",
+      "brand": "Casper",
+      "model": "C896",
+      "problem": "Fanlardan ses geliyor.",
       "explain": "Sorun araştırılıyor.",
       "status": "Hazır değil",
-      "id": 6
+      "id": 7
     }
   ]
 }
