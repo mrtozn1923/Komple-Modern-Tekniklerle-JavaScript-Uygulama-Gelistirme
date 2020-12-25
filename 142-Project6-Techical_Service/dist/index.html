@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cihaz Kabul</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header-app">Teknik Servis Uygulaması</header>
+    <main id="main-content">
+        <!-- ----------------Menu------- -->
+        <section id="menu">
+            <button id="btn-open-fault-record">Arıza Kaydı Aç</button>
+            <button id="btn-list-fault-record">Arıza Kayıtları</button>
+        </section>
+        <!-- --------------Yeni Arıza Kaydı-------------------- -->
+        <section id="container-new-fault-record">
+            <header>Yeni Arıza Kaydı</header>
+            <section id="container-customer-info">
+                <header>Müşteri Bilgisi</header>
+                <div>
+                    <input type="text" placeholder="Müşteri Adı" id="inpt-customer-name">
+                    <input type="number" placeholder="Telefon Numarası" id="inpt-customer-phone-number">
+                </div>
+            </section>
+            <section id="container-device-info">
+                <header>Cihaz Bilgisi</header>
+                <div>
+                    <input type="text" placeholder="Marka" id="inpt-device-brand">
+                    <input type="text" placeholder="Model" id="inpt-device-model">
+                    <input type="text" placeholder="Sorun" id="inpt-device-problem">
+                </div>
+            </section>
+            <button id="btn-create-fault-record">Arıza Kaydı Oluştur</button>
+        </section>
+        <!-- --------------Arıza Kayıtları-------------------- -->
+        <section id="container-fault-records">
+            <header>Arıza Kayıtları</header>
+            <section id="container-search-fault-record">
+                <header>Arıza Kaydı Arama</header>
+                <div>
+                    <input type="number" id="inpt-record-phone-number" placeholder="Telefon Numarası">
+                </div>
+            </section>
+            <section id="container-customer-list">
+                <header>Müşteri Listesi</header>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Kayıt Nu.</td>
+                            <td>Müşteri Adı</td>
+                            <td>Telefon Nu.</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr class="customer-info">
+                            <td>1</td>
+                            <td>Mert</td>
+                            <td>01234567890</td>
+                        </tr>
+                        <tr class="customer-info">
+                            <td>2</td>
+                            <td>Mehmet</td>
+                            <td>01234567891</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </section>
+            <section id="container-customer-device-list">
+                <header>Müşteri Cihaz Listesi</header>
+                <div class="device">
+                    <table>
+                        <tr>
+                            <td>Kayıt Nu:</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Marka:</td>
+                            <td>Monster</td>
+                        </tr>
+                        <tr>
+                            <td>Model:</td>
+                            <td>Abra A5</td>
+                        </tr>
+                        <tr>
+                            <td>Sorun:</td>
+                            <td>Kilitleniyor</td>
+                        </tr>
+                        <tr>
+                            <td>Açıklama:</td>
+                            <td>Sorun araştırılıyor.</td>
+                        </tr>
+                        <tr>
+                            <td>Durum:</td>
+                            <td>Hazır değil</td>
+                        </tr>
+                    </table>
+                    <div class="container-device-status">
+                        <button class="btn-ready-device">Cihaz Hazır</button>
+                        <button class="btn-not-ready-device">Cihaz Hazır Değil</button>
+                    </div>
+                    <button class="btn-remove-fault-record">Arıza Kaydını Sil</button>
+                </div>
+            </section>
+        </section>
+    </main>
+    <script src="bundle.js"></script>
+</body>
+
+</html>
