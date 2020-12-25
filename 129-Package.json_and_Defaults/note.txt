@@ -1,0 +1,11 @@
+//Package.json oluşturma
+npm init ->package.json oluşturmak için kullanılır
+npm init --yes ->varsayılan değerler ile package.json oluşturur
+
+//Kullanıcı Ayarları
+npm config set init-author-name "Mert Özen"
+npm set init-license "MIT"
+npm config get init-author-name
+npm get init-license
+npm config delete init-author-name
+npm delete init-license

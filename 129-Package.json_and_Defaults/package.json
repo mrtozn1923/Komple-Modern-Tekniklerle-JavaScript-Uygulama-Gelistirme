@@ -1,0 +1,12 @@
+{
+  "name": "random-string-array",
+  "version": "1.0.0",
+  "description": "random string array generator",
+  "main": "randomstringarray.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["array","random","string"],
+  "author": "Mert Özen",
+  "license": "MIT"
+}
