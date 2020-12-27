@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+main{
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+}
+main input[type="text"],input[type="number"]{
+    width:100%;
+    height: 30px;
+    padding: 5px;
+    font-size: 0.8rem;
+    border: 1px solid teal;
+    outline: none;
+    margin: 5px 0 5px 0;
+}
+main button{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 30px;
+    color:white;
+    cursor: pointer;
+}
+main button:hover{
+    opacity: 0.9;
+}
+header#header-app{
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: darkslategrey;
+    color: white;
+    box-shadow: 0 2px 2px gray;
+}
+main#main-content{
+    padding: 10px;
+}
+main>section>header{
+    height: 30px;
+    line-height: 30px;
+    padding-left: 5px;
+    color:white;
+    background-color: teal;
+    margin: 5px 0 5px 0;
+}
+main>section>section>header{
+    font-size: 0.9rem;
+    height: 25px;
+    line-height: 25px;
+    border-left:5px solid crimson;
+    padding-left:5px;
+    color: white;
+    background-color:  steelblue;
+}
+section#menu{
+    display: flex;
+    justify-content: space-between;
+}
+section#menu button#btn-open-fault-record{
+    background-color: crimson;
+    width: 49%;
+}
+section#menu button#btn-list-fault-record{
+    background-color: steelblue;
+    width: 49%;
+}
+section#container-new-fault-record button#btn-create-fault-record{
+    background-color: darkslategray;
+}
+
+/* ---------Arıza Kayıtları--------- */
+/* ----Müşteri----- */
+section#container-customer-list table{
+    width: 100%;
+    margin: 5px 0 5px 0;
+    font-size: 0.9rem;
+    text-align: center;
+    border-collapse: separate;
+}
+section#container-customer-list table thead td{
+    background-color: darkslategray;
+    color: white;
+}
+section#container-customer-list table td{
+    padding: 5px;
+    max-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: wrap;
+}
+section#container-customer-list table td:nth-child(1){
+    width: 20%;
+}
+section#container-customer-list table tbody tr{
+    cursor: pointer;
+    background-color: lightgray;
+}
+section#container-customer-list table tbody tr:hover{
+    background-color: black;
+    color:lightgray;
+}
+/* ------Cihaz----- */
+section#container-customer-device-list div.device{
+    margin-top: 10px;
+    border: 2px solid darkslategray;  
+}
+section#container-customer-device-list div.device table{
+    width: 100%;    
+    font-size: 0.9rem;
+}
+section#container-customer-device-list div.device table td:nth-child(even){
+    padding: 5px;
+    max-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+section#container-customer-device-list div.device table td:nth-child(odd){
+    width: 30%;
+    background-color: teal;
+    color:white;
+    text-align: center;
+}
+section#container-customer-device-list div.device table td:nth-child(even){
+    width: 70%;
+    background-color: lightgray;
+}
+section#container-customer-device-list div.device button.btn-remove-fault-record{
+    background-color: darkslategray;
+}
+section#container-customer-device-list div.device button.btn-ready-device{
+    background-color: steelblue;
+    width: 49%;
+}
+section#container-customer-device-list div.device button.btn-not-ready-device{
+    background-color: teal;
+    width: 49%;
+}
+section#container-customer-device-list div#container-device-status{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+main section#container-fault-records{
+    display: none;
+}

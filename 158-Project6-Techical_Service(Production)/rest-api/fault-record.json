@@ -1,0 +1,81 @@
+{
+  "customers": [
+    {
+      "name": "Mert",
+      "phone": "01234567890",
+      "id": 1
+    },
+    {
+      "name": "Mehmet",
+      "phone": "01234567891",
+      "id": 2
+    },
+    {
+      "name": "Mesut",
+      "phone": "01234567892",
+      "id": 3
+    },
+    {
+      "name": "Ahmet",
+      "phone": "01234567893",
+      "id": 4
+    },
+    {
+      "name": "Tahir",
+      "phone": "01234567894",
+      "id": 5
+    },
+    {
+      "name": "Mert",
+      "phone": "01234567890",
+      "id": 6
+    }
+  ],
+  "devices": [
+    {
+      "customerPhone": "01234567890",
+      "brand": "Monster",
+      "model": "Abra A5",
+      "problem": "Kilitleniyor",
+      "explain": "Sorun araştırılıyor.",
+      "status": "Hazır değil",
+      "id": 1
+    },
+    {
+      "customerPhone": "01234567891",
+      "brand": "Monster",
+      "model": "Abra A7",
+      "problem": "Kilitleniyor",
+      "explain": "SSD değiştirildi.",
+      "status": "Hazır",
+      "id": 2
+    },
+    {
+      "customerPhone": "01234567892",
+      "brand": "msi",
+      "model": "cx62",
+      "problem": "Isınıyor",
+      "explain": "Parça bekliyor.",
+      "status": "Hazır değil",
+      "id": 4
+    },
+    {
+      "customerPhone": "01234567893",
+      "brand": "Lenovo",
+      "model": "L258",
+      "problem": "Fanı çalışmıyor.",
+      "explain": "Fan değiştirildi.",
+      "status": "Hazır değil",
+      "id": 5
+    },
+    {
+      "customerPhone": "01234567894",
+      "brand": "Casper",
+      "model": "C896",
+      "problem": "Fanlardan ses geliyor.",
+      "explain": "Sorun araştırılıyor.",
+      "status": "Hazır değil",
+      "id": 7
+    }
+  ]
+}
