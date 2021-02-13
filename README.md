@@ -2,6 +2,8 @@
 
 [Youtube Kanalım](https://www.youtube.com/channel/UCxSgy7kAjD5r9zXMxt9DtAQ?view_as=subscriber)
 
+[Kurs Adresi](https://www.akademiktv.com/index.jsp?modul=multicourse&courseid=99)
+
 ![Screenshot](0-Course_Content/JavascriptCourseThumbnail.png)
 
 ![Screenshot](0-Course_Content/content1.png)
